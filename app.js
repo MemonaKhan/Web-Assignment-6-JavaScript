@@ -171,11 +171,35 @@
 
 // // Task # 16
 
-var university = "University of Karachi";
-var arr = university.split();
-alert(university.split());
+// var university = "University of Karachi";
+// var arr = university.split("");
+// document.write("Elements of Array are");
+// for(var i=0; i<arr.length;i++){
+//     document.write("<br>"+arr[i]);
+// }
 
 
 // // Task # 17
+
+// var input = prompt("Enter any string");
+// document.write("User input: "+input);
+// document.write("<br>Last character of input: "+input.charAt(input.length-1));
+
+
 // // Task # 18
+
+// var string = "The quick brown fox jumps over the lazy dog";
+// var count = 0;
+// for (var i = 0; i < string.length; i++) {
+//     if (string.slice(i, i + 3) === "the" || string.slice(i, i + 3) === "The") {
+//         count++;
+//     }
+// }
+// document.write("Text: " + string);
+// document.write("<br>There are " + count + " occurence(s) of the word 'the'");
+
+
+
+// // Assignment # 26-30
+
 // // Task # 1
