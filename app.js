@@ -203,3 +203,75 @@
 // // Assignment # 26-30
 
 // // Task # 1
+
+// var num = prompt("Enter any positive integer", "Positive Number");
+// document.write("Number: "+num);
+// document.write("<br>Round off value: "+ Math.round(num));
+// document.write("<br>Floor Value: "+ Math.floor(num));
+// document.write("<br>Ceil Value: "+ Math.ceil(num));
+
+
+// // Task # 2
+
+// var num = prompt("Enter any negative floating point ", "Negative Number");
+// document.write("Number: "+num);
+// document.write("<br>Round off value: "+ Math.round(num));
+// document.write("<br>Floor Value: "+ Math.floor(num));
+// document.write("<br>Ceil Value: "+ Math.ceil(num));
+
+
+// // Task # 3
+
+// var num = prompt("Enter any number ", "Number");
+// document.write("The absolute value of "+num +" is "+Math.abs(num));
+
+
+// // Task # 4
+
+// var dice = (Math.random()*6) + 1;
+// document.write("Random Dice Value: "+ Math.floor(dice));
+
+
+// // Task # 5
+
+// var toss = Math.floor((Math.random() * 2) + 1);
+// document.write(toss);
+// if (toss === 2) {
+//     document.write("<br>Random Coin Value: Heads");
+// }
+// else{
+//     document.write("<br>Random Coin Value: Tails");
+// }
+
+
+// // Task # 6
+
+// var num = Math.floor((Math.random() * 100) + 1);
+// document.write("Random number between 1 and 100: "+ num);
+
+
+// // Task # 7
+
+// var weight = prompt("Enter you weight in Kilograms please", "Weight in kilograms");
+// document.write("The weight of user is "+ parseFloat(weight)+ " Kilograms");
+
+
+// // Task # 8
+
+// var secNum = Math.floor((Math.random() * 10) + 1);
+// var input = +prompt("Enter any number between 1 and 10");
+// if(input===secNum){
+//     alert("Congratulate!");
+// }
+// else{
+//     alert("Try Again!");
+// }
+
+
+
+// // Assignment # 31-34
+
+
+// // Task # 1
+// // Task # 2
+// // Task # 3
