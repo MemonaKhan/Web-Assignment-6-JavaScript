@@ -369,7 +369,7 @@
 
 // var currDate = new Date();
 // document.write("Current date: " + currDate);
-// currDate.setHours(currDate.getHours()-1);
+// currDate.setHours(currDate.getHours() - 1);
 // document.write("<br>1 hour ago, it was " + currDate);
 
 
@@ -377,16 +377,16 @@
 
 // var currDate = new Date();
 // alert("Current date: " + currDate);
-// currDate.setFullYear(currDate.getFullYear()-100);
+// currDate.setFullYear(currDate.getFullYear() - 100);
 // alert("100 years back, it was " + currDate);
 
 
 // // Task # 13
 
 // var age = +prompt("Enter your age please");
-// var birthYear = (new Date().getFullYear())-age;
-// document.write("Your Age is: "+age);
-// document.write("<br>Your Birth Year is: "+birthYear);
+// var birthYear = (new Date().getFullYear()) - age;
+// document.write("Your Age is: " + age);
+// document.write("<br>Your Birth Year is: " + birthYear);
 
 
 // // Task # 14
@@ -395,17 +395,17 @@
 // var currMonth = "February";
 // var units = 410;
 // var chargerPerUnit = 16;
-// var netAmntPayable = units*chargerPerUnit;
+// var netAmntPayable = units * chargerPerUnit;
 // var latePaySurcharge = 350;
 // var grossAmntPayable = netAmntPayable + latePaySurcharge;
 // document.write("<h2>K-Electric Bill</h2>");
-// document.write("<br>Customer Name: "+custName+"</strong>");
-// document.write("<br>Month: <strong>"+currMonth+"</strong>");
-// document.write("<br>Number of units : <strong>"+units+"</strong>");
-// document.write("<br>Charges per unit: <strong>"+chargerPerUnit+"</strong>");
-// document.write("<br><br>Net Amount Payable (within Due Date) : <strong>"+netAmntPayable+"</strong>");
-// document.write("<br>Late Payment Surcharge : <strong>"+latePaySurcharge+"</strong>");
-// document.write("<br>Gross Amount Payable (after Due Date): <strong>"+grossAmntPayable+"</strong>");
+// document.write("<br>Customer Name: " + custName + "</strong>");
+// document.write("<br>Month: <strong>" + currMonth + "</strong>");
+// document.write("<br>Number of units : <strong>" + units + "</strong>");
+// document.write("<br>Charges per unit: <strong>" + chargerPerUnit + "</strong>");
+// document.write("<br><br>Net Amount Payable (within Due Date) : <strong>" + netAmntPayable + "</strong>");
+// document.write("<br>Late Payment Surcharge : <strong>" + latePaySurcharge + "</strong>");
+// document.write("<br>Gross Amount Payable (after Due Date): <strong>" + grossAmntPayable + "</strong>");
 
 
 
@@ -415,20 +415,207 @@
 
 // // Task # 1
 
+// function displayTimeDate() {
+//     document.write(new Date());
+// }
 
+// displayTimeDate();
 
 
 // // Task # 2
+
+// function greatUser(firstName, lastName) {
+//     alert("Hello " + firstName + " " + lastName)
+// }
+
+// greatUser("Memona", "Khan");
+
+
 // // Task # 3
+
+// function add() {
+//     var num1 = +prompt("Enter First Number");
+//     var num2 = +prompt("Enter Second Number");
+//     return num1 + num2;
+// }
+
+// document.write("Sum = " + add());
+
+
 // // Task # 4
+
+// function calc(num1, opr, num2) {
+//     if (opr === "+") {
+//         return num1 + num2;
+//     }
+//     else if (opr === "-") {
+//         return num1 - num2;
+//     }
+//     else if (opr === "*") {
+//         return num1 * num2;
+//     }
+//     else if (opr === "/") {
+//         return num1 / num2;
+//     }
+//     else if (opr === "%") {
+//         return num1 % num2;
+//     }
+// }
+
+// var num1 = +prompt("Enter First Number");
+// var opr = prompt("Enter Operator (+, -, *, /, %)");
+// var num2 = +prompt("Enter Second Number");
+// document.write("Result: " + calc(num1, opr, num2));
+
+
 // // Task # 5
+
+// function square(num) {
+//     return num * num;
+// }
+
+// document.write("Square of 4 is " + square(4));
+
+
 // // Task # 6
+
+// function factorial(num) {
+//     fact = 1;
+//     for (var i = 1; i <= num; i++) {
+//         fact = fact * i;
+//     }
+//     return fact;
+// }
+
+// document.write("Factorial of 5 is " + factorial(5));
+
+
 // // Task # 7
+
+// function counting(start, end) {
+//     for (var i = start; i <= end; i++) {
+//         document.write("<br>" + i);
+//     }
+// }
+
+// var start = +prompt("Enter Start Number for Counting");
+// var end = +prompt("Enter End Number for Counting");
+// document.write("<h2>Counting from " + start + " to " + end + "</h2>");
+// counting(start, end);
+
+
 // // Task # 8
+
+// function calculateHypotenuse(base, perp) {
+//     var hyp = calculateSquare(calculateSquare(base) + calculateSquare(perp));
+//     function calculateSquare(num) {
+//         return num * num;
+//     }
+//     return hyp;
+// }
+
+// var base = +prompt("Enter Base of Right Angle Triangle");
+// var perp = +prompt("Enter Perpendicular of Right Angle Triangle");
+// var hyp = calculateHypotenuse(base, perp);
+// document.write("Hypotenus of Right Angle Triangle is " + hyp);
+
+
 // // Task # 9
+
+// function calcArea(width, height) {
+//     var area = width * height;
+//     return area;
+// }
+
+// // i  Arguments as value
+// var area1 = calcArea(24, 15);
+// // ii Arguments as variables
+// var w = 8, h = 12;
+// var area2 = calcArea(w, h);
+
+// document.write("Area of Rectangle by passing Width and Height as Arguments as value: " + area1);
+// document.write("<br>Area of Rectangle by passing Width and Height as Arguments as variables : " + area2);
+
+
 // // Task # 10
+
+// function checkPalindrome(word) {
+//     word = word.toLowerCase();
+//     var check = true;
+//     var len = word.length;
+//     for (var i = 0; i < Math.floor(len / 2); i++) {
+//         if (word[i] !== word[len - 1 - i]) {
+//             check = false;
+//         }
+//     }
+//     if (check === true) {
+//         alert(word + " is a palindrome");
+//     }
+//     else {
+//         alert(word + " is not a palindrome");
+//     }
+// }
+// checkPalindrome(prompt("Enter word to check whether it is palindrome or not"));
+
+
 // // Task # 11
+
+// function titleCase(string) {
+//     var arr = string.split(" ");
+//     for (var i = 0; i < arr.length; i++) {
+//         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].substr(1).toLowerCase();
+//     }
+//     string = arr.join(" ");
+//     return string;
+// }
+// var input = prompt("Input any Sentence", "Sentence here");
+// document.write("The Sentence after converting: " + titleCase(input));
+
+
 // // Task # 12
+
+// function longString(string) {
+//     var arr = string.split(" ");
+//     var long = arr[0];
+//     for (var i = 0; i < arr.length; i++) {
+//         if (long.length < arr[i].length) {
+//             long = arr[i];
+//         }
+//     }
+//     return long;
+// }
+// var input = prompt("Enter any sentence to find the longest word", "String here");
+// document.write("The Longest Word is: " + longString(input));
+
+
 // // Task # 13
+
+// function countletter(string, letter) {
+//     var count = 0;
+//     for (var i = 0; i < string.length; i++) {
+//         if (string[i] == letter) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// var string = prompt("Enter any String");
+// var letter = prompt("Enter any Letter to check its occurence in string");
+// var occurence = countletter(string, letter);
+// alert(" The letter " + letter + " occurrs " + occurence + " times in string " + string);
+
+
 // // Task # 14
 
+// function calcCircumference(radius) {
+//     var circumference = 2 * 3.14159 * radius;
+//     document.write("<br>The Circumference is " + circumference.toFixed(2));
+// }
+// function calcArea(radius) {
+//     var area = 3.14159 * radius * radius;
+//     document.write("<br>The Area is " + area.toFixed(2));
+// }
+
+// var radius = prompt("Enter radius of circle to calculate its circumference and area");
+// calcCircumference(radius);
+// calcArea(radius);
